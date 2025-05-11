@@ -70,6 +70,9 @@ int lengthOfTheString = stringName.length();
 // now lengthOfTheString holds the value 9.
 ```
 
+### Note:
+`size()` and `length()` are functionally identical, so you can use either based on your preference.
+
 ---
 
 ### `substr()`
@@ -119,7 +122,7 @@ originalString.replace(7, 11, "Burger");
 
 ---
 
-### 'erase()'
+### `erase()`
 This function removes characters from the string, starting at a given position.
 
 ```cpp
