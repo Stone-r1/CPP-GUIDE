@@ -100,7 +100,7 @@ bool isEmpty = originalString.empty();
 ---
 
 ### `find()`
-This function finds the first occurrence of a substring or character in the string and returns its index.
+This function finds the first occurrence of a substring or character in the string and returns its index. If no such index found, returns `string::npos` (-1).
 
 ```cpp
 string originalString = "Hello World!";
@@ -139,6 +139,15 @@ This function inserts a string at a given position.
 string originalString = "Hello ";
 originalString.insert(6, "World"); 
 // now string looks like this: "Hello World".
+```
+
+### `reverse` For Strings
+Just like arrays, strings can also be reversed using the reverse function. But instead of using pointers like word and word + n, we use .begin() and .end() with strings.
+
+```cpp
+string word = "hello";
+reverse(word.begin(), word.end());
+// now the string looks like this: "olleh"
 ```
 
 ---
