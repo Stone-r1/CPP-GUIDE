@@ -23,4 +23,16 @@ For each test case, the program reads one form of an Amog'u noun, always with th
 
 ---
 
+## Dubstep
+The program reads a string searching for the "WUB" substrings, which Vasya added to his remix. When "WUB" is found, it is skipped, and the non-"WUB" segments are printed as words separated by spaces. This restores the original song from the dubstep remix.
+- Try solving this problem using inbuilt functions .find() and .erase().
+
+---
+
+## String
+Let c be the number of 1s. On one hand, each operation can decrease c by at most 1, so the answer is at least c. On the other hand, by only operating on 1s each time, it takes exactly c operations, so the answer is at most c. Therefore, the answer is c.
+
+---
+
+## Pangram
 

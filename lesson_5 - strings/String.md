@@ -153,3 +153,35 @@ reverse(word.begin(), word.end());
 ---
 
 These are the most crucial string functions that are regularly utilised in ordinary C++ development, competitive programming, and the resolution of challenging issues.  Gaining proficiency in these features will enable you to handle and work with text more effectively, which will make solving a variety of problems simpler.
+
+## ASCII and Strings
+Each character in a string is encoded as a number in the ASCII (American Standard Code for Information Interchange) encoding. ASCII assigns a distinct number to each character, including letters, digits, punctuation, and control characters. For example, 'A' is 65, 'B' is 66, and 'a' is 97. Typecasting means converting one data type into another. For example, you might want to turn a char (like 'A') into an int (like 65), or a float (like 3.14) into an int (which becomes 3). Representing characters as numbers means that arithmetic and comparison operations can be performed on characters. This is especially useful for problems involving character sorting, encryption, or letter case conversions. For example, you can convert a lowercase letter to uppercase by subtracting 32 from its ASCII value:
+
+```cpp
+char lower = 'a';
+char upper = (char)(lower - 32); // typecasting integer value to it's ascii character
+// upper is now 'A'
+```
+
+## Checking If a Character is Uppercase or Lowercase
+In C++, you can check if a character is uppercase or lowercase simply by comparing it to its ASCII range. All characters are stored as numbers (ASCII values), so comparisons like 'A' <= ch && ch <= 'Z' are valid and effective.
+
+## Syntax
+```cpp
+char character = 'A';
+if (character >= 'A' && character <= 'Z') {
+    cout << "UpperCase" << endl;
+} else if (character >= 'a' && character <= 'z') {
+    cout << "LowerCase" << endl;
+} else {
+    cout << "Not a letter" << endl;
+}
+```
+
+## NOTE
+- Uppercase letters fall within 'A' to 'Z' (ASCII 65–90).
+- Lowercase letters fall within 'a' to 'z' (ASCII 97–122).
+
+For more information about ASCII table visit these websites:
+[theory](https://www.ascii-code.com/articles/Beginners-Guide-to-ASCII).
+[practical use](https://www.geeksforgeeks.org/cpp-program-to-print-ascii-value-of-a-character/)
