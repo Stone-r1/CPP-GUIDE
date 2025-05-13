@@ -8,9 +8,9 @@ int main() {
     if (n == 1) {
         cout << 0;
     } else {
-        int a = 0, b = 1;
+        long long a = 0, b = 1;
         for (int i = 2; i < n; i++) {
-            int temp = a + b;
+            long long temp = a + b;
             a = b;
             b = temp;
         }
